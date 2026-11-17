@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Splitboard — the make.fun board and bounty, side by side</title>
+<style>
+:root{--ink:#131022;--mut:#5c5670;--line:#e3e0ef;--bg:#f6f5fa;--card:#fff;--acc:#5140c4;--acc2:#efeaff;--good:#067647;--bad:#b42318;--amber:#b54708}
+*{box-sizing:border-box}
+body{margin:0;font:14px/1.45 -apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc);text-decoration:none}
+a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<header class="hd">
+  <a class="brand" id="brand" href="#/">make.fun <b>splitboard</b></a>
+  <nav>
+    <a id="nav-board" href="#/">Board</a>
+    <form class="lookup" id="lookup">
+      <input id="lookup-handle" type="text" placeholder="Profile handle, e.g. mangkarones" aria-label="Profile handle">
+      <button type="submit">Open profile</button>
+    </form>
+  </nav>
+</header>
+<div class="strip"><span id="strip-text">this view: warming up…</span><button id="refresh" type="button">Refresh</button></div>
+<p class="strategy">ETag-revalidated cache · in-flight dedupe · windowed leaderboard · views by import()</p>
+<main id="view"></main>
+<footer>Read-only: every figure here is read live from make.fun's public API. Nothing signs in or writes.</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
